@@ -9,7 +9,6 @@ namespace ConsultaCEP
 
         public ConsultaCEP()
         {
-            //Inicialize the coponents of WF
             InitializeComponent();
         }
 
