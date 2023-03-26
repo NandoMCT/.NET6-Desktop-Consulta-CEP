@@ -37,8 +37,9 @@
             txtEstado = new TextBox();
             lblEstado = new Label();
             btnBuscar = new Button();
-            txtCEP = new TextBox();
             lblCEP = new Label();
+            btnLimpar = new Button();
+            mskCEP = new MaskedTextBox();
             SuspendLayout();
             // 
             // lblEndereco
@@ -119,20 +120,13 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(156, 29);
+            btnBuscar.Location = new Point(155, 12);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(169, 35);
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
             btnBuscar.Click += btnBuscar_Click;
-            // 
-            // txtCEP
-            // 
-            txtCEP.Location = new Point(12, 36);
-            txtCEP.Name = "txtCEP";
-            txtCEP.Size = new Size(115, 23);
-            txtCEP.TabIndex = 1;
             // 
             // lblCEP
             // 
@@ -144,13 +138,32 @@
             lblCEP.TabIndex = 12;
             lblCEP.Text = "CEP";
             // 
+            // btnLimpar
+            // 
+            btnLimpar.Location = new Point(156, 53);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(169, 35);
+            btnLimpar.TabIndex = 13;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
+            // 
+            // mskCEP
+            // 
+            mskCEP.Location = new Point(12, 33);
+            mskCEP.Mask = "00000-999";
+            mskCEP.Name = "mskCEP";
+            mskCEP.Size = new Size(103, 23);
+            mskCEP.TabIndex = 14;
+            // 
             // ConsultaCEP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(337, 262);
+            Controls.Add(mskCEP);
+            Controls.Add(btnLimpar);
             Controls.Add(lblCEP);
-            Controls.Add(txtCEP);
             Controls.Add(btnBuscar);
             Controls.Add(txtEstado);
             Controls.Add(lblEstado);
@@ -179,7 +192,8 @@
         private TextBox txtEstado;
         private Label lblEstado;
         private Button btnBuscar;
-        private TextBox txtCEP;
         private Label lblCEP;
+        private Button btnLimpar;
+        private MaskedTextBox mskCEP;
     }
 }
