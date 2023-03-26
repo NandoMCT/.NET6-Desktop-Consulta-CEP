@@ -1,6 +1,6 @@
 ﻿namespace ConsultaCEP
 {
-    partial class Form1
+    partial class ConsultaCEP
     {
         /// <summary>
         ///  Required designer variable.
@@ -144,7 +144,7 @@
             lblCEP.TabIndex = 12;
             lblCEP.Text = "CEP";
             // 
-            // Form1
+            // ConsultaCEP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,9 +162,9 @@
             Controls.Add(lblEndereco);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "ConsultaCEP";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Consulta CEP";
             ResumeLayout(false);
             PerformLayout();
         }

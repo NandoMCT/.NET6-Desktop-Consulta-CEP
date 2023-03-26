@@ -4,10 +4,10 @@ using System.Text.RegularExpressions;
 
 namespace ConsultaCEP
 {
-    public partial class Form1 : Form
+    public partial class ConsultaCEP : Form
     {
 
-        public Form1()
+        public ConsultaCEP()
         {
             //Inicialize the coponents of WF
             InitializeComponent();
@@ -70,7 +70,9 @@ namespace ConsultaCEP
                     }
                 }
 
-            } catch(HttpRequestException ex){
+            }
+            catch (HttpRequestException ex)
+            {
                 if (ex.StatusCode == HttpStatusCode.BadRequest)
                 {
                     MessageBox.Show("O servidor retornou uma exceção do tipo: HTTP 400 (Bad Request).");
@@ -80,7 +82,7 @@ namespace ConsultaCEP
                     MessageBox.Show($"O servidor retornou uma exceção do tipo: {ex.Message}");
                 }
             }
-            
+
         }
     }
 }
