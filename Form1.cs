@@ -13,7 +13,7 @@ namespace ConsultaCEP
             InitializeComponent();
         }
 
-        private async void btnBuscar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
 
             //Assign the value of CEP input into variable cepText
@@ -48,7 +48,7 @@ namespace ConsultaCEP
                     String erroTrimmed = erro.Trim(charsToTrim);
                     if (erroTrimmed == "true")
                     {
-                        MessageBox.Show("CPF Inválido!");
+                        MessageBox.Show("CEF Inválido!");
                     }
                     else
                     {
