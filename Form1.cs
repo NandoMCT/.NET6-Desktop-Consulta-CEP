@@ -1,4 +1,4 @@
-using System.Diagnostics;
+ï»¿using System.Diagnostics;
 using System.Net;
 using System.Text.RegularExpressions;
 
@@ -48,10 +48,11 @@ namespace ConsultaCEP
                     String erroTrimmed = erro.Trim(charsToTrim);
                     if (erroTrimmed == "true")
                     {
-                        MessageBox.Show("CEF Inválido!");
+                        MessageBox.Show("CEP InvÃ¡lido!");
                     }
                     else
                     {
+                        //Aassigning values â€‹â€‹to labels
                         String end = splitResult[2].Split(":")[1];
                         String endTrimmed = end.Trim(charsToTrim);
                         txtEndereco.Text = endTrimmed;
@@ -71,15 +72,16 @@ namespace ConsultaCEP
                 }
 
             }
+            //Exception message
             catch (HttpRequestException ex)
             {
                 if (ex.StatusCode == HttpStatusCode.BadRequest)
                 {
-                    MessageBox.Show("O servidor retornou uma exceção do tipo: HTTP 400 (Bad Request).");
+                    MessageBox.Show("O servidor retornou uma exceÃ§Ã£o do tipo: HTTP 400 (Bad Request).");
                 }
                 else
                 {
-                    MessageBox.Show($"O servidor retornou uma exceção do tipo: {ex.Message}");
+                    MessageBox.Show($"O servidor retornou uma exceÃ§Ã£o do tipo: {ex.Message}");
                 }
             }
 
