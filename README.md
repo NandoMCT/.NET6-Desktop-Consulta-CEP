@@ -3,7 +3,7 @@ Este software para Windows foi desenvolvido em .NET 6 e utiliza a API Via CEP pa
 
 Ao executar o software, o usuário poderá inserir um CEP no campo de busca e clicar em um botão de busca. O software então enviará uma solicitação para a API Via CEP para recuperar as informações correspondentes ao CEP digitado. Uma vez que os dados do CEP tenham sido recuperados, o software os exibirá em uma interface gráfica amigável para o usuário as informações encontradas, sendo elas o endereço completo, incluindo rua, bairro, cidade e estado.
 
-![image](https://user-images.githubusercontent.com/105169602/227809619-b1ddee78-d9fd-463e-a94a-671ee4c08b86.png)
+![image](https://user-images.githubusercontent.com/105169602/227812105-f96e5c23-b49a-4882-8337-cc5655415413.png)
 ![image](https://user-images.githubusercontent.com/105169602/227810809-8977a15c-1b64-4266-965b-c7b0468200ec.png)
 
 O software conta com alguns scripts para tratamento de erros como a formatação do CEP buscado, verificação de CEP inválidos e tratamento de exceções de BAD Resquest.
